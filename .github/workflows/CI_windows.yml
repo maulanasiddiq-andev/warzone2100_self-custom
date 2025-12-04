@@ -86,6 +86,7 @@ jobs:
       with:
         fetch-depth: 0
         path: 'src'
+        submodules: recursive
     - name: Configure Repo Checkout
       id: checkout-config
       working-directory: '${{ github.workspace }}\src'
@@ -684,6 +685,7 @@ jobs:
         with:
           fetch-depth: 0
           path: 'src'
+          submodules: recursive
       - name: Configure Repo Checkout
         id: checkout-config
         working-directory: '${{ github.workspace }}\src'
@@ -1021,6 +1023,7 @@ jobs:
         with:
           fetch-depth: 1
           path: 'src'
+          submodules: recursive
       - name: Prep Environment
         id: settings
         run: |
